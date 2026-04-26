@@ -23,6 +23,16 @@
         .experience-row > .subpage-block {
           width: 20%;
         }
+        /* Vertically center About Me, Resume, and Contact content on desktop, biased upward */
+        .pt-page-1.pt-page-current,
+        .pt-page-2.pt-page-current,
+        .pt-page-5.pt-page-current {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          min-height: 100vh;
+          padding-bottom: 25vh;
+        }
       }
       .event-bullets {
         margin: 4px 0 0;
