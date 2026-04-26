@@ -18,8 +18,71 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
-    
-  
+    <style>
+      @media (min-width: 992px) {
+        .experience-row > .subpage-block {
+          width: 20%;
+        }
+      }
+      .event-bullets {
+        margin: 4px 0 0;
+        padding-left: 18px;
+        font-size: 0.875em;
+        font-weight: 300;
+        color: #666;
+      }
+      .event-bullets li {
+        margin-bottom: 3px;
+        line-height: 1.5em;
+      }
+      /* Flatter, modern section title (replaces chunky yellow block) */
+      .section-title {
+        background: transparent !important;
+        color: #222 !important;
+        margin: 0 !important;
+        padding: 4px 0 4px 14px !important;
+        text-shadow: none !important;
+        border-left: 3px solid #ffcd38;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+      }
+      .section-title:after {
+        display: none !important;
+      }
+      /* Uniform experience cards: equal heights, normalized icons */
+      .experience-row .subpage-block {
+        display: flex;
+      }
+      .experience-row .service-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .experience-row .service-block .service-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      .experience-row .service-block img {
+        height: 64px;
+        max-height: 64px;
+        width: auto;
+        max-width: 110px;
+        margin: 0 0 18px;
+        object-fit: contain;
+      }
+      .experience-row .service-block h4 {
+        min-height: 2.6em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+        text-align: center;
+      }
+    </style>
+
 
     <!-- This styles needs for demo -->
     <link rel="stylesheet" href="preview/lmpixels-demo-panel.css" type="text/css">
@@ -50,7 +113,7 @@
         </div>
 
         <div class="site-title-block">
-          <a href="https://www.templateshub.net" target="_blank"><h1 class="site-title">Pradeep Vairamani</h1></a>
+          <h1 class="site-title">Pradeep Vairamani</h1>
           <p class="site-description">Software engineer</p>
         </div>
 
@@ -88,6 +151,7 @@
               <li><a class="tip social-button" href="https://www.facebook.com/pradeeprv/" title="Facebook"><i class="fa fa-facebook"></i></a></li>
               <li><a class="tip social-button" href="https://www.linkedin.com/in/pradeepvairamani" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
               <li><a class="tip social-button" href="https://github.com/pradeepvairamani/" title="Github"><i class="fa fa-github"></i></a></li>
+              <li><a class="tip social-button" href="https://stackoverflow.com/users/750940/pradeep-vairamani" title="Stack Overflow"><i class="fa fa-stack-overflow"></i></a></li>
               <!--<li><a class="tip social-button" href="#" title="last.fm"><i class="fa fa-lastfm"></i></a></li>-->
               <!--<li><a class="tip social-button" href="#" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>-->
             </ul>
@@ -113,7 +177,7 @@
                 <div class="col-sm-6 col-md-6 subpage-block">
                   <div class="general-info">
                     <h3>I am a Principal software engineer @ Microsoft</h3>
-                    <p>I believe I bring with me a good blend of skills. I have a solid technical background with exposure to cutting edge technology in public facing product companies, such as Qualcomm, Oracle, VMware and Disney Interactive. I constantly work towards understanding the bigger picture, and contributing to it. In my previous roles, this involved designing complex, flexible and scalable systems while understanding the business aspect of software development.</p>
+                    <p>I bring a strong blend of technical depth and product-oriented thinking, with experience working on cutting-edge technologies at public-facing product companies such as Qualcomm, Oracle, VMware, and Disney Interactive. In these roles, I’ve focused on designing complex, flexible, and scalable systems that support evolving product needs.</p>
                   </div>
                 </div>
 
@@ -141,16 +205,16 @@
                       <!-- Testimonial Content -->
                       <div class="testimonial-content">
                         <div class="testimonial-text">
-                          <p>I am currently working on Azure fluid relay which is a ultra-low latency collaboration backend for <a href="https://fluidframework.com/">Fluid Framework</a>.</p>
+                          <p>Working on a next-gen Office artifact. Also, helped incubate a new AI experience in Microsoft 365 Copilot.</p>
                         </div>
-                      </div>            
-                      <!-- /Testimonial Content -->  
+                      </div>
+                      <!-- /Testimonial Content -->
                       <!-- Testimonial Author -->
                       <div class="testimonial-credits">
                         <!-- Picture -->
                         <div class="testimonial-picture">
                           <img src="images/testimonials/testimonial_photo_1.png" alt="">
-                        </div>              
+                        </div>
                         <!-- /Picture -->
                         <!-- Testimonial author information -->
                         <div class="testimonial-author-info">
@@ -158,7 +222,7 @@
                           <p class="testimonial-firm">Microsoft</p>
                         </div>
                       </div>
-                      <!-- /Testimonial author information -->               
+                      <!-- /Testimonial author information -->
                     </div>
                     <!-- End of Testimonial 1 -->
 
@@ -167,16 +231,42 @@
                       <!-- Testimonial Content -->
                       <div class="testimonial-content">
                         <div class="testimonial-text">
+                          <p>I am currently working on Azure fluid relay which is a ultra-low latency collaboration backend for <a href="https://fluidframework.com/">Fluid Framework</a>.</p>
+                        </div>
+                      </div>
+                      <!-- /Testimonial Content -->
+                      <!-- Testimonial Author -->
+                      <div class="testimonial-credits">
+                        <!-- Picture -->
+                        <div class="testimonial-picture">
+                          <img src="images/testimonials/testimonial_photo_1.png" alt="">
+                        </div>
+                        <!-- /Picture -->
+                        <!-- Testimonial author information -->
+                        <div class="testimonial-author-info">
+                          <p class="testimonial-author">Pradeep</p>
+                          <p class="testimonial-firm">Microsoft</p>
+                        </div>
+                      </div>
+                      <!-- /Testimonial author information -->
+                    </div>
+                    <!-- End of Testimonial 2 -->
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-item">
+                      <!-- Testimonial Content -->
+                      <div class="testimonial-content">
+                        <div class="testimonial-text">
                           <p>"Before Microsoft, I worked at VMware on software defined data center as a service aka vmware cloud."</p>
                         </div>
-                      </div>            
-                      <!-- /Testimonial Content -->  
+                      </div>
+                      <!-- /Testimonial Content -->
                       <!-- Testimonial Author -->
                       <div class="testimonial-credits">
                         <!-- Picture -->
                         <div class="testimonial-picture">
                           <img src="images/testimonials/testimonila_photo_2.png" alt="">
-                        </div>              
+                        </div>
                         <!-- /Picture -->
                         <!-- Testimonial author information -->
                         <div class="testimonial-author-info">
@@ -184,9 +274,9 @@
                           <p class="testimonial-firm">VMware</p>
                         </div>
                       </div>
-                      <!-- /Testimonial author information -->               
+                      <!-- /Testimonial author information -->
                     </div>
-                    <!-- End of Testimonial 2 -->
+                    <!-- End of Testimonial 3 -->
                   </div>
                 </div>
               </div>
@@ -196,9 +286,19 @@
                 <h3>Experience</h3>
               </div>
 
-              <div class="row">
+              <div class="row experience-row">
                 <div class="col-sm-6 col-md-3 subpage-block">
-                  <div class="service-block"> 
+                  <div class="service-block">
+                    <div class="service-info">
+                      <img src="images/service/azure-fluid-relay.png" alt="Azure Fluid Relay">
+                      <h4>Azure Fluid Relay</h4>
+                      <p>Ultra-low latency collaboration backend powering Fluid Framework.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block">
                     <div class="service-info">
                       <img src="images/service/vmware.png" alt="Responsive Design">
                       <h4>SDDC as a service</h4>
@@ -287,8 +387,13 @@
                     <div class="timeline-event te-primary">
                       <h5 class="event-date">Mar 2018 - Current</h5>
                       <h4 class="event-name">Principal software engineer</h4>
-                      <span class="event-description">Fluid/Office collaboration service</span>
-                      <p>Working on the backend service powering real time coauthoring across all Office endpoints</p>
+                      <span class="event-description">Microsoft</span>
+                      <ul class="event-bullets">
+                        <li>Working on next-gen Office artifacts</li>
+                        <li>Helped incubate a new AI experience in Microsoft 365 Copilot</li>
+                        <li>Helped scale Azure Fluid Relay from zero to a billion sessions per month</li>
+                        <li>Worked on the Office collaboration service</li>
+                      </ul>
                     </div>
                     <!-- Single event -->
                     <div class="timeline-event te-primary">
